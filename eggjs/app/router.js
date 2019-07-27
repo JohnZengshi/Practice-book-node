@@ -9,4 +9,10 @@ module.exports = app => {
 
   router.get('/user/list', controller.user.list);
   router.get('/user/find', controller.user.find);
+
+  router.post('/table/modifyInformation', controller.table.modifyInformation);
+
+  router.post('/table/newInformation', controller.table.newInformation);
+
+  router.post('/login', controller.user.userRegistration);
 };
